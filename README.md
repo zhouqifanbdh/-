@@ -9,3 +9,11 @@
 代码部分：miniprogram-1
 
 小程序调研报告
+
+### Week 2
+
+**用列表渲染和条件渲染的方式，重新实现lecture 1中同类项的数据
+
+代码部分：miniprogram-2
+
+Json数据格式调研
