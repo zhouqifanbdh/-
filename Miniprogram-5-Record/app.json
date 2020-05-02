@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/welcome/index",
+    "pages/RecordMusic/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "录音工具",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

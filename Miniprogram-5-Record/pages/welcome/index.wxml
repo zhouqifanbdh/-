@@ -1,0 +1,3 @@
+<view>
+  <button bindtap='gotoRecordMusic' type='primary'>录音与播放声音</button>
+</view>
