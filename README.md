@@ -26,7 +26,10 @@ Json数据格式调研
 
 ### Week 5
 **完成录音、媒体组件与视图组件综合练习**
-代码部分-Miniprogram-5-Record
+代码部分：Miniprogram-5-Record
+
+### Week 6
+**新闻应用用户中心**
 
 ### 个人项目
 **记账本**
