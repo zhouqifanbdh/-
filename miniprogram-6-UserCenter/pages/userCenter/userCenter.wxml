@@ -1,0 +1,69 @@
+<template name="cellTemplate">
+  <text style="text-align:left"> {{item.imagename}} </text>
+  <image src="{{item.imagesrc}}" mode="aspectFit" style="width: 20px; height: 20px; background-color: transparent;"></image>
+</template>
+
+<!--主视图-->
+<view class="mainViewClass">
+
+  <!--顶部视图  各登录入口-->
+  <view class="topviewClass">
+    <view class="topIconClass">
+      <image class="images" src="../../imges/UserCenter/wxIcon.png" mode="aspectFit" style="width: 60px; height: 60px; background-color: transparent;"></image>
+      <image class="images" src="../../imges/UserCenter/qqIcon.png" mode="aspectFit" style="width: 60px; height: 60px; background-color: transparent;"></image>
+      <image class="images" src="../../imges/UserCenter/sinaIcon.png" mode="aspectFit" style="width: 60px; height: 60px; background-color: transparent;"></image>
+      <image class="images" src="../../imges/UserCenter/phoneIcon.png" mode="aspectFit" style="width: 60px; height: 60px; background-color: transparent;"></image>
+    </view>
+    <button class="morebutton">更多登录方式 ></button>
+  </view>
+    <view class="bottomview">
+  <!--定义滚动视图-->
+    <scroll-view scroll-y="true">
+
+      <!--收藏、夜间、设置、历史、 cell 栏目-->
+      <view class="cardBackClass">
+        <view class="cardClass">
+          <image src="../../imges/UserCenter/favoriteIcon.png" mode="aspectFit" style="width: 30px; height: 30px; background-color: transparent;"></image>
+          <text> 收藏 </text>
+        </view>
+        <view class="cardClass">
+          <image src="../../imges/UserCenter/nightIcon.png" mode="aspectFit" style="width: 30px; height: 30px; background-color: transparent;"></image>
+          <text> 夜间 </text>
+        </view>
+        <view class="cardClass">
+          <image src="../../imges/UserCenter/setIcon.png" mode="aspectFit" style="width: 30px; height: 30px; background-color: transparent;"></image>
+          <text> 设置 </text>
+        </view>
+        <view class="cardClass">
+          <image src="../../imges/UserCenter/historyIcon.png" mode="aspectFit" style="width: 30px; height: 30px; background-color: transparent;"></image>
+          <text> 历史 </text>
+        </view>
+      </view>
+            <!--第1组cell-->
+       <view class="sectionClass">
+      <view class="cellClass">
+        <template is="cellTemplate" data="{{item:section1}}" />
+      </view>
+      </view>
+
+      <!--第2组cell-->
+       <view class="sectionClass">
+      <block wx:for="{{section2}}" wx:for-item="section2">
+        <view class="cellClass">
+          <template is="cellTemplate" data="{{item:section2}}" />
+        </view>
+      </block>
+        </view>
+
+      <!--第3组cell-->
+       <view class="sectionClass">
+      <block  wx:for="{{section3}}" wx:for-item="section3">
+        <view class="cellClass">
+          <template is="cellTemplate" data="{{item:section3}}" />
+        </view>
+      </block>
+        </view>
+
+    </scroll-view>
+  </view>
+</view>
